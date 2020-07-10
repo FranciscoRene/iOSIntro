@@ -18,7 +18,10 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlR-ug-XlO">
                                 <rect key="frame" x="30" y="234" width="315" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="H0L-zv-1eU"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilx-ze-wDk">
                                 <rect key="frame" x="30" y="184" width="315" height="35"/>
@@ -26,7 +29,10 @@
                                     <constraint firstAttribute="height" constant="35" id="E5T-N7-Tlc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NUF-tS-Fij"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-aN-cu5">
                                 <rect key="frame" x="157.66666666666666" y="313" width="60" height="30"/>
@@ -38,6 +44,9 @@
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="UserValidation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zmN-Wa-y7X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -57,11 +66,41 @@
                     <connections>
                         <outlet property="txtPass" destination="dlR-ug-XlO" id="FOW-0Y-oGN"/>
                         <outlet property="txtUser" destination="ilx-ze-wDk" id="H5R-Ov-2o7"/>
+                        <segue destination="S0Q-EO-QVk" kind="show" id="fba-QH-cMZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-494.20289855072468" y="-55.434782608695656"/>
+            <point key="canvasLocation" x="-1764" y="-4588"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="h7w-M0-z4i">
+            <objects>
+                <tableViewController id="S0Q-EO-QVk" customClass="TVCList" customModule="ProyectoInduccion" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eC6-Sx-ZOq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LJb-0R-Ybk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LJb-0R-Ybk" id="syW-Rs-3Bu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S0Q-EO-QVk" id="AB6-b8-A66"/>
+                            <outlet property="delegate" destination="S0Q-EO-QVk" id="pq0-0d-RhO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="glP-JA-2pl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HnV-NL-U2f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-953" y="-4589"/>
         </scene>
     </scenes>
 </document>

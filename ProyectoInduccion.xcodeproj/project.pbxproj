@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F521CDDE24B7F5AC00AAC412 /* TVCList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F521CDDD24B7F5AC00AAC412 /* TVCList.swift */; };
+		F521CDE024B7FB2800AAC412 /* MisVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F521CDDF24B7FB2800AAC412 /* MisVariables.swift */; };
 		F534BB2924B4B46F00EAD1AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534BB2824B4B46F00EAD1AA /* AppDelegate.swift */; };
 		F534BB2B24B4B46F00EAD1AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534BB2A24B4B46F00EAD1AA /* SceneDelegate.swift */; };
 		F534BB2D24B4B46F00EAD1AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534BB2C24B4B46F00EAD1AA /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F521CDDD24B7F5AC00AAC412 /* TVCList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCList.swift; sourceTree = "<group>"; };
+		F521CDDF24B7FB2800AAC412 /* MisVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisVariables.swift; sourceTree = "<group>"; };
 		F534BB2524B4B46F00EAD1AA /* ProyectoInduccion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoInduccion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F534BB2824B4B46F00EAD1AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F534BB2A24B4B46F00EAD1AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				F534BB3624B4B47400EAD1AA /* LaunchScreen.storyboard */,
 				F534BB3924B4B47400EAD1AA /* Info.plist */,
 				F534BB3124B4B46F00EAD1AA /* ProyectoInduccion.xcdatamodeld */,
+				F521CDDD24B7F5AC00AAC412 /* TVCList.swift */,
+				F521CDDF24B7FB2800AAC412 /* MisVariables.swift */,
 			);
 			path = ProyectoInduccion;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F521CDDE24B7F5AC00AAC412 /* TVCList.swift in Sources */,
 				F534BB2D24B4B46F00EAD1AA /* ViewController.swift in Sources */,
 				F534BB2924B4B46F00EAD1AA /* AppDelegate.swift in Sources */,
+				F521CDE024B7FB2800AAC412 /* MisVariables.swift in Sources */,
 				F534BB2B24B4B46F00EAD1AA /* SceneDelegate.swift in Sources */,
 				F534BB3324B4B46F00EAD1AA /* ProyectoInduccion.xcdatamodeld in Sources */,
 			);
