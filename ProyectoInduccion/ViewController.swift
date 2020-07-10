@@ -19,10 +19,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func validarUsuario() {
         if txtUser.text != "" {
-            print("hay usurio")
-            alertShowMessage(txtsms: "Hay Usuario")
+
+            self.performSegue(withIdentifier: "ShowList", sender: self)
+            
         }else {
-            alertShowMessage(txtsms: "Ingrese Usuario")
+            alertShowMessage(txtsms: "Ingrese Usuario", vc: self)
         }
     }
     
@@ -73,17 +74,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func loadView() {
         super.loadView()
     }
-
-    func alertShowMessage (txtsms : String) {
-        let alert = UIAlertController(title : "Atención", message: txtsms, preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
-        
-        alert.addAction(okAction)
-        
-        self.present(alert, animated: true, completion: nil)
-    }
     
-
 }
 
